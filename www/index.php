@@ -5,9 +5,12 @@
 
 </head>
 <body>
-<p>[This is the Header Placeholder]</p>
-<p>[This is the Button Navigation Placeholder]</p>
-<p>[This is the Dynamic Content Placeholder]</p>
-<p>[This is the Footer Placeholder]</p>
+<?php
+include("includes/inc_header.php");
+include("includes/inc_button_nav.php");
+include("includes/inc_text_links.php");
+include("includes/inc_home.php");
+include("includes/inc_footer.php");
+?>
 </body>
 </html>
