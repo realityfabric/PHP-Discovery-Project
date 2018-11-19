@@ -1,4 +1,6 @@
-<!-- Inserts a copyright symbol and the current year. -->
+<?php
+include("inc_site_counter.php");
+?>
 <p>&copy; 2018</p>
 <?php
 
@@ -17,7 +19,7 @@ $DBNAME = "chinese_zodiac";
 $proverb = randomProverbFromDB($HOST, $USER, $PASSWD, $DBNAME);
 
 echo "<p>Your random proverb is: \"$proverb\"</p>";
-
+echo "<p>Total visitors to this site: $visitors</p>";
 function randomProverbFromFile () {
 	$proverbs = readProverbs();
 	$ProverbCount = count($proverbs);
